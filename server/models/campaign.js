@@ -6,7 +6,7 @@ const campaignSchema = mongoose.Schema({
     inspiration: Number,
     morale: Number,
     frosthavenResources: {lumber: Number, metal: Number, hide: Number, axenuts: Number, arrowvines: Number, corpsecaps: Number, flamefruits: Number, snowthistles: Number, rockroots: Number},
-    stickers: [{name: String}],
+    stickers: [String],
     buildings: [{name: String, level: Number, isWrecked: Boolean}],
     prosperity: {level: Number, toNext: Number, progress: Number},
     guardUpgrades: [{source: String, effect: String}],
